@@ -25,6 +25,7 @@
          (create-heap (h-min H2)
                       (combine-heaps (left H2) (right H2))
                       H1))))
+                      
 (define (remove-min H)
   (combine-heaps (left H) (right H)))
 
@@ -58,10 +59,3 @@
 
 (define (heap-remove f H)
   (combine f (left H) (right H)))
-
-  
-
-
-      
-      
-  
